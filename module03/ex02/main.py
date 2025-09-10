@@ -1,0 +1,20 @@
+from DiamondTrap import King
+
+
+def subject_tests():
+    Joffrey = King("Joffrey")
+    print(Joffrey.__dict__)
+    Joffrey.set_eyes("blue")
+    Joffrey.set_hairs("light")
+    print(Joffrey.get_eyes())
+    print(Joffrey.get_hairs())
+    print(Joffrey.__dict__)
+
+
+def main():
+    subject_tests()
+    return 0
+
+
+if __name__ == "__main__":
+    main()
