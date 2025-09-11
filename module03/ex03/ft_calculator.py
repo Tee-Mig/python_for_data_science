@@ -1,9 +1,22 @@
 class Calculator:
+    def __init__(self, value: list = []):
+        self.result = value
+
     def __add__(self, object) -> None:
-        pass
+        self.result = [num + object for num in self.result]
+        print(self.result)
+
     def __mul__(self, object) -> None:
-        pass
+        self.result = [num * object for num in self.result]
+        print(self.result)
+
     def __sub__(self, object) -> None:
-        pass
+        self.result = [num - object for num in self.result]
+        print(self.result)
+
     def __truediv__(self, object) -> None:
-        pass
+        if object != 0:
+            self.result = [num / object for num in self.result]
+            print(self.result)
+        else:
+            print("It's impossible to divide by 0")
