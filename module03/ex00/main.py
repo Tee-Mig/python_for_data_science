@@ -1,4 +1,5 @@
-from S1E9 import Character, Stark
+from S1E9 import Stark
+# from S1E9 import Character, Stark
 
 
 def subject_tests():
@@ -14,8 +15,8 @@ def subject_tests():
     Lyanna = Stark("Lyanna", False)
     print(Lyanna.__dict__)
 
-    hodor = Character("hodor")
-    print(hodor)
+    # hodor = Character("hodor")
+    # print(hodor)
 
 
 def main():

@@ -1,6 +1,8 @@
-class Calculator:
-    def __init__(self, value: list = []):
-        self.result = value
+class calculator:
+    def __init__(self, values: list = None):
+        if values is None:
+            values = []
+        self.result = values
 
     def __add__(self, object) -> None:
         self.result = [num + object for num in self.result]
