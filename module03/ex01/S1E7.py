@@ -18,7 +18,8 @@ class Baratheon(Character):
         self.hairs = hairs
 
     def die(self) -> None:
-        """Mark the object as no longer alive by setting `is_alive` to False."""
+        """Mark the object as no longer alive by
+        setting `is_alive` to False."""
         self.is_alive = False
 
     def __str__(self) -> str:
@@ -26,7 +27,8 @@ class Baratheon(Character):
         return f"Vector: ('Baratheon', '{self.eyes}', '{self.hairs}')"
 
     def __repr__(self) -> str:
-        """Return an unambiguous string representation of the object for developers."""
+        """Return an unambiguous string
+        representation of the object for developers."""
         return f"Vector: ('Baratheon', '{self.eyes}', '{self.hairs}')"
 
 
@@ -47,7 +49,8 @@ class Lannister(Character):
         self.hairs = hairs
 
     def die(self) -> None:
-        """Mark the object as no longer alive by setting `is_alive` to False."""
+        """Mark the object as no longer
+        alive by setting `is_alive` to False."""
         self.is_alive = False
 
     def __repr__(self) -> str:
@@ -55,7 +58,8 @@ class Lannister(Character):
         return f"Vector: ('Lannister', '{self.eyes}', '{self.hairs}')"
 
     def __str__(self) -> str:
-        """Return an unambiguous string representation of the object for developers."""
+        """Return an unambiguous string
+        representation of the object for developers."""
         return f"Vector: ('Lannister', '{self.eyes}', '{self.hairs}')"
 
     @classmethod
@@ -64,5 +68,6 @@ class Lannister(Character):
         first_name: str,
         is_alive: bool = True
     ) -> "Lannister":
-        """Factory method to create a Lannister with the given name and alive status."""
+        """Factory method to create a Lannister
+        with the given name and alive status."""
         return cls(first_name, is_alive)
