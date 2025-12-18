@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 
 
 def generate_id() -> str:
-    """Generate a random 15-character lowercase identifier."""
+    """Generate a random 15-character lowercase identifier"""
     return "".join(random.choices(string.ascii_lowercase, k=15))
 
 
@@ -14,11 +14,11 @@ class Student:
     Simple student record.
 
     Attributes:
-        name: Student first name.
-        surname: Student surname.
-        active: Whether the student is active (always True at creation).
-        login: Computed as first letter of name (uppercase) + surname.
-        id: Random 15-character lowercase identifier.
+        name: Student first name
+        surname: Student surname
+        active: Whether the student is active (always True at creation)
+        login: Computed as first letter of name (uppercase) + surname
+        id: Random 15-character lowercase identifier
     """
 
     name: str

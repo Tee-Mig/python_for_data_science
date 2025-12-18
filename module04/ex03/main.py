@@ -2,14 +2,11 @@ from new_student import Student
 
 
 def subject_tests() -> None:
-    """Run the subject's example test."""
     student = Student(name="Edward", surname="agle")
     print(student)
 
 
 def tests() -> None:
-    """Run additional tests on the Student dataclass."""
-
     # Test 1: automatic fields (active, login, id)
     try:
         student = Student(name="Edward", surname="agle")

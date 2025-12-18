@@ -20,14 +20,14 @@ def tests():
     RED = "\u274C"
 
     def capture(*args, **kwargs) -> str:
-        """Capture and return printed output of ft_statistics."""
+        # Capture and return printed output of ft_statistics
         buf = StringIO()
         with redirect_stdout(buf):
             ft_statistics(*args, **kwargs)
         return buf.getvalue().strip()
 
     def show_result(name: str, got: str, expected: str) -> None:
-        """Print comparison with checkmark and detailed outputs."""
+        # Print comparison with checkmark and detailed outputs
         if got == expected:
             print(f"{name}: {GREEN}")
         else:
@@ -38,7 +38,7 @@ def tests():
             print(got if got else "(no output)")
             print("---")
 
-    # === Expected outputs from the subject ===
+    # Expected outputs
 
     expected1 = (
         "mean : 95.6\n"
@@ -55,7 +55,7 @@ def tests():
 
     expected4 = "ERROR\nERROR\nERROR"
 
-    # === Run tests ===
+    # Tests
 
     got1 = capture(
         1, 42, 360, 11, 64,
